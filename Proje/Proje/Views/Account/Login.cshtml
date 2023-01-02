@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+<!--start-main-->
+<h1>Hoşgeldiniz!<span>Lütfen Giriş Yapın...</span></h1>
+<div class="login-box">
+    <form>
+        <input type="text" class="text" value="Kullanıcı adı" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}">
+        <input type="password" value="Şifre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+    </form>
+    <div class="remember">
+        <a href="#"><p>Beni hatırla</p></a>
+        <h4>Şifrenizi mi unnuttunuz?<a href="#">Buraya Tıkla.</a></h4>
+    </div>
+    <div class="clear"> </div>
+    <form action="Verify" method="post">
+        <div class="btn">
+            <input type="submit" value="Giriş Yap...">
+        </div>
+    </form>
+    <div class="clear"> </div>
+</div>
+<!--//End-login-form-->
+<!--start-copyright-->
+<div class="copy-right">
+    
+</div>
+<!--//end-copyright-->		
